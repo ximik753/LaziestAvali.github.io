@@ -1,4 +1,4 @@
-import {Application} from './components/Application/Application'
+import {Application} from './components/Application'
 import {Departments} from './components/Departments'
 import {Courses} from './components/Courses'
 

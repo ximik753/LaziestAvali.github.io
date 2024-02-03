@@ -30,9 +30,6 @@ export const Courses = (props: ICoursesProps) => {
           className="button remove"
           onClick={() => props.onRemoveCourseFromWallet(null, true)}
         >Удалить все выбранные курсы</button>
-        <button
-          className="button accent send"
-        >Заполнить заявку</button>
       </div>
     </React.Fragment>
   )
