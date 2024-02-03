@@ -1,31 +1,26 @@
 {
-  "name": "ypec_dpo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "homepage": "https://danya0.github.io/ypec_dpo/",
+  "name": "laziestavali-github-io",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production",
-    "start": "webpack serve",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "author": "Samarkin <danya0> Samarkin",
-  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
-    "css-loader": "^6.7.1",
-    "file-loader": "^6.2.0",
-    "gh-pages": "^4.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "image-webpack-loader": "^8.1.0",
-    "mini-css-extract-plugin": "^2.6.0",
-    "sass": "^1.52.2",
-    "sass-loader": "^13.2.0",
-    "ts-loader": "^9.3.0",
-    "typescript": "^4.7.3",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.1"
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "sass": "^1.69.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }
